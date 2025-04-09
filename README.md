@@ -48,6 +48,27 @@ message body containing only the text SUBSCRIBE DETOURS-ANNOUNCE.
 To leave it, send an email to listserv@lists.research.microsoft.com with a 
 message body containing only the text UNSUBSCRIBE DETOURS-ANNOUNCE.
 
+## Compiling the source code 
+
+* (Optional) Make it Work in Any Terminal
+
+    - set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared
+
+    - call "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat"
+
+    move to src folder
+
+	- cd /d D:\WorkSpace\Detours-main\src
+
+    Then run 
+    
+    - nmake 
+    
+    command from there.
+
+## Set environment ( use .h & .lib ) 
+
+   https://www.artstation.com/blogs/rendord/WBB6q/adding-libraries-to-your-c-project-using-visual-studio
 
 ## License
 
