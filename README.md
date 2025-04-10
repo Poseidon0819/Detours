@@ -70,6 +70,14 @@ message body containing only the text UNSUBSCRIBE DETOURS-ANNOUNCE.
 
    https://www.artstation.com/blogs/rendord/WBB6q/adding-libraries-to-your-c-project-using-visual-studio
 
+## Document:
+================
+This document describes the installation and usage of this version of the
+Detours package.  In particular, it provides an updated API table.
+
+Complete documentation for the Detours package, including a detailed API
+reference can be found in the Detours.chm file.   
+
 ## License
 
 Copyright (c) Microsoft Corporation. All rights reserved.
