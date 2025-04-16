@@ -50,7 +50,7 @@ message body containing only the text UNSUBSCRIBE DETOURS-ANNOUNCE.
 
 ## Compiling the source code 
 
-* (Optional) Make it Work in Any Terminal
+* (Optional) Make it Work in Any Terminal ( Visual Studio 2022 compile-toolset: windows 10)
 
     - set INCLUDE=%INCLUDE%;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared
 
@@ -65,6 +65,47 @@ message body containing only the text UNSUBSCRIBE DETOURS-ANNOUNCE.
     - nmake 
     
     command from there.
+
+
+* (Optional) Make it Work in Any Terminal ( Visual Studio 2015 compile-toolset: windows xp )
+
+    install Visual Studio 2015 vs_community.exe 
+
+    make sure these are selected:
+
+    * Visual C++
+
+    * Common Tools for Visual C++ 2015
+
+    Download Windows 10 SDk from this url : https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/index-legacy
+
+    setup.exe download directly url : https://go.microsoft.com/fwlink/p/?LinkID=698771
+
+    Add Visual C++ tools and Windows SDK paths manually:
+        
+    Open Command Prompt, and run this block:
+
+    - set PATH=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin;%PATH%
+
+    - set INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\shared;
+
+    - set LIB=C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10586.0\ucrt\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10586.0\um\x86
+
+    Confirm cl.exe and nmake.exe are available:
+
+    - where cl
+
+    - where nmake
+
+    move to src folder
+
+	- cd /d D:\WorkSpace\Detours\src
+
+    Then run 
+    
+    - nmake 
+    
+    command from there.    
 
 ## Set environment ( use .h & .lib ) 
 
